@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './AllStyles.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <> 
+  <h1>Trendy is the last stage before tacky.</h1>
+
+  <h2>Trendy is the last stage before tacky.</h2>
+  <h3>Trendy is the last stage before tacky.</h3>
+  <h4>Trendy is the last stage before tacky.</h4>
+  <h5>Trendy is the last stage before tacky.</h5>
+  <h6>Trendy is the last stage before tacky.</h6>
+
+
+
+
+
+
+  </>
   );
+
 }
 
 export default App;
