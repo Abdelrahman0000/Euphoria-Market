@@ -258,6 +258,22 @@ h3 {//styleName: H3 - Space Mono;
     
 }
 
+.title{
+padding-left: 12px;
+position: relative;
+span{
+    width: 6px;
+height: 100%;
+flex-shrink: 0;
+border-radius: 10px;
+background: #8A33FD;
+position: absolute;
+left: 0;
+top: 0;
+}
+
+}
+
 h4 {//styleName: H4 - Space Mono;
      
     font-size: 32px;
@@ -276,11 +292,12 @@ h5 {//styleName: H5 - Space Mono;
 
 }
 h6{
-     
     font-size: 20px;
-    font-weight: 600;
-    line-height: 38px;
-    letter-spacing: 0em;
+    font-family: Causten;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
 }
 
 
