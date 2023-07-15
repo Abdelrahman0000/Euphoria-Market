@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavbarOut from './Component/NavbarOut/NavbarOut1.jsx';
 import SignIn from './Page/SignIn/SignIn.jsx';
 
+import SignUp from './Page/Signup/Signup.jsx';
+
+import { AuthProvider } from "./AuthContext.js"
 
 
 // // Import your components using lazy loading
@@ -29,12 +32,15 @@ export default function Linking() {
         <div class="rect4"></div>
         <div class="rect5"></div>
       </div></div>}>
+      <AuthProvider>
         <Routes>
         <Route exact path="/sign_in" element={<SignIn />} />
 
+        <Route exact path="/sign_up" element={<SignUp />} />
         </Routes>
+        </AuthProvider>
       </Suspense>
-      
+     
     </BrowserRouter>
   );
 }

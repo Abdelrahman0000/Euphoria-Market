@@ -1,14 +1,12 @@
 import React,{useState,useRef} from 'react'
-import './Signin.css'
-import Back from '../../image/bg/bg1.png'
+import './Signup.css'
+import Back from '../../image/bg/bg2.png'
 import {EyeSlashFill,EyeFill} from 'react-bootstrap-icons'
 import { Link ,useNavigate } from 'react-router-dom'
-import { signInWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
 import {  Alert } from "react-bootstrap"
 import {auth} from '../../data'
-
-export default function SignIn() {
- 
+export default function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
 
   const emailRef = useRef()
@@ -29,7 +27,7 @@ export default function SignIn() {
     try {
       setError("");
       setLoading(true);
-      const userCredential = await signInWithEmailAndPassword(auth, emailRef.current.value, passwordRef.current.value);
+      const userCredential = await createUserWithEmailAndPassword(auth, emailRef.current.value, passwordRef.current.value);
       const user = userCredential.user;
       console.log("User created:", user);
       navigate("/jk");
@@ -88,8 +86,6 @@ Sign In Page
   <div className="line right-line"></div>
 </div>
 
-
-
 {error && <Alert variant="danger">{error}</Alert>}
 
 <label htmlFor="">
@@ -108,7 +104,6 @@ Sign In Page
 <div className="above">
 <button type='submit'  className="my-btn">Log In</button>
 </div>
-
 
 </form>
 
