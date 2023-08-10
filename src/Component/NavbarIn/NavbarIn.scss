@@ -1,0 +1,164 @@
+@keyframes fullHight {
+    from{
+        height: 0;
+    }
+
+    to{
+        height: 100%;
+    }
+}
+
+
+.NavbarIn{
+    
+display: block;
+padding:  1rem 1.7rem;
+.nav-inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  .d-none-saconde{
+    display: none;
+  }
+
+
+.logo{
+   h3{
+    color: #3C4242;
+font-family: Mintaka;
+font-size: 34.064px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+sub{
+    border-top: 1px solid #3C4242;
+font-family: Mintaka;
+    top: 10px;
+    font-size: 12px;
+    position: relative;
+    left: -60px;
+}
+   }
+}
+}
+.list{
+    display: none;
+}
+.links{
+   
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-around;
+    max-width: 70%;
+
+}
+
+ul{
+    li{
+        
+list-style: none;
+margin-right: 40px;
+a{
+    color: #807D7E;
+}
+.active{
+   
+    color: #3C4242 ;
+}
+    }
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a{
+        margin-right: 24px;
+        display: flex;
+padding: 12px;
+justify-content: center;
+align-items: center;
+gap: 12px;
+border-radius: 8px;
+background: #F6F6F6;
+svg{
+    font-size: 18px;
+}
+    }
+    .active{
+        color: #F6F6F6;
+        background-color: #3C4242;
+    }
+}
+
+}
+
+
+
+@media(max-width:954px){
+    .NavbarIn .nav-inner{
+        .list{
+            display: inline-block;
+            transition: all .2s linear;
+            -webkit-transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            -ms-transition: all .2s linear;
+            -o-transition: all .2s linear;
+        }
+    display: flex;
+    flex-direction: column;
+   
+    .all-list{
+        
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    }
+    ul {
+        gap:2rem;
+        margin: 2rem 0;
+        li{
+        margin-left: 1rem;
+    }
+}
+          .d-none-saconde{
+            transition: all .2s linear;
+            -webkit-transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            -ms-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            overflow: hidden;
+            width: 100%;
+display: flex;
+
+          }
+
+          .animate{
+            animation: fullHight .4s ease-in-out forwards;
+            -webkit-animation: fullHight .4s ease-in-out forwards;
+}
+.noneHight{
+    height: 0;
+}
+
+
+          .d-none-first{
+            display: none;
+          }
+.links{
+    max-width: 100%;
+   margin-bottom: 10px;
+    .my-row{
+        flex-direction: column;
+        margin: 35px 0;
+        align-items: start;
+        li{
+            margin: 0;
+        }
+    }
+}
+        }
+}
