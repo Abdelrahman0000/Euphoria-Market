@@ -1,0 +1,145 @@
+.Home{
+    position: relative;
+    z-index: 100;
+    .mySwiper{
+   
+    .box{
+        height: 628px;
+        width: 100%;
+        position: relative;
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+        .box-inner{
+            color: #FFF;
+            position: relative;
+            width: 38%;
+            margin-left: 187px;
+            padding-top: 129px;
+            h4,h1{
+                margin-bottom: 40px;
+            }
+            h1{
+                color: #FFF;
+               
+                font-size: 78px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 93.622px; /* 120.028% */
+                letter-spacing: 0.315px;
+            }
+        }
+    }
+    .above{
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .my-btn{
+            display: flex;
+padding: 16px 72px;
+justify-content: center;
+align-items: center;
+gap: 12px;
+border-radius: 8px;
+background: #FFF;
+color: #3C4242;
+        }
+    }
+}
+}
+
+
+
+@media(max-width:1189px){
+    .Home {
+        .mySwiper{
+        .box{
+            .box-inner{
+                width: 52%;
+                padding-top: 90px;
+                margin-left: 100px;
+              
+            }
+        }
+    }
+    }
+}
+
+
+
+@media(max-width:950px){
+    .Home {
+        .mySwiper{
+        .box{
+            height: 525px;
+            .box-inner{
+                width: 60%;
+                h1{
+                    
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+                }
+            }
+        }
+    }
+    }
+}
+
+
+
+@media(max-width:700px){
+    .Home {
+        .mySwiper{
+        .box{
+            height: 450px;
+            .box-inner{
+                padding-top: 50px;
+                margin-left: 50px;
+                width: 80%;
+                h1{
+                    
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+                }
+            }
+        }
+    }
+    }
+}
+
+
+
+
+
+
+
+@media(max-width:700px){
+    .Home {
+        .mySwiper{
+        .box{
+            height: 400px;
+            .box-inner{
+                padding-top: 25px;
+                margin-left: 25px;
+                width: 80%;
+               
+            }
+        }
+    }
+    }
+}
+
+
