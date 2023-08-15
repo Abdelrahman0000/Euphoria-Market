@@ -1,0 +1,44 @@
+.allcardB{
+
+.mySwiper1{
+height: 470px;
+.cardB{
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+}
+.box-container{
+    display              : grid;
+   justify-content: center;
+    gap                  : 16px;
+.box{
+    height: 470px;
+}
+}
+}
+
+.allcardS{
+
+    .mySwiper1{
+    height: 340px;
+    .cardS{
+        
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        top: 50%;
+    }
+    }
+    .box-container{
+        display              : grid;
+       justify-content: center;
+        gap                  : 16px;
+    .box{
+        height: 340px;
+    }
+    }
+    }
+

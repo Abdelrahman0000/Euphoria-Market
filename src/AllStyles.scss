@@ -39,7 +39,7 @@ $box-shadow :.5rem 1rem rgba(0, 0, 0, .1);
 }
 
 section {
-    padding: 3rem 9%;
+    padding: 49px 100px ;
 }
 
 h3 {
@@ -330,8 +330,9 @@ h3 {//styleName: H3 - Space Mono;
 }
 
 .title{
-padding-left: 12px;
+padding-left: 30px;
 position: relative;
+margin-bottom: 69px;
 span{
     width: 6px;
 height: 100%;
@@ -404,6 +405,9 @@ p {//styleName: Base (Body) - Space Mono;
 
 
 @media (max-width:834px) {
+    section{
+        padding: 50px;
+    }
     h1 {
      
     //styleName: H2 - Space Mono;
@@ -498,6 +502,9 @@ label{
 
 
 @media(max-width:600px){
+    section{
+        padding: 50px 25px;
+    }
 h1{   
     font-size: 35px;
     font-weight: 700;
